@@ -31,7 +31,7 @@ const timeCurrent = document.querySelector('.time-current');
 const timeTotal = document.querySelector('.time-total');
 const vinylDisc = document.querySelector('.vinyl-disc');
 
-let isPlaying = true;
+let isPlaying = false;
 let isMuted = false;
 
 // Función para formatear tiempo
