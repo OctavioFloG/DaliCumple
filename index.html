@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Nubes decorativas -->
+    <div class="clouds">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+    </div>
+
+    <!-- Elementos flotantes -->
+    <div class="floating-elements" id="floatingElements"></div>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Reproductor de música -->
+        <div class="music-player">
+            <div class="music-player-header">
+                <div class="vinyl-disc"><i class="fas fa-compact-disc"></i></div>
+                <div class="song-info">
+                    <div class="song-title">Start a War - JENNIE</div>
+                    <div class="song-artist">Decidí que estaría contigo hasta el final <i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <span class="time-current">0:00</span>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <div class="progress-dot" id="progressDot"></div>
+                </div>
+                <span class="time-total">0:00</span>
+            </div>
+            <div class="music-controls">
+                <button class="control-btn" id="playPauseBtn"><i class="fas fa-pause"></i></button>
+                <button class="control-btn small" id="volumeBtn"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <h1>¡Feliz Cumpleaños!</h1>
+        </div>
+
+        <!-- Tarjeta principal -->
+        <div class="card">
+            <!-- Decoraciones de esquina -->
+            <div class="corner-decoration top-left"><img src="/images/hello-kitty_2.png" alt="Hello Kitty" style="width: 130px; height: 100px;"></div>
+            <div class="corner-decoration top-right"><img src="/images/hello-kitty_3.png" alt="Hello Kitty" style="width: 130px; height: 100px;"></div>
+            <div class="corner-decoration bottom-left"><i class="fas fa-heart"></i></div>
+            <div class="corner-decoration bottom-right"><i class="fas fa-heart"></i></div>
+
+            <!-- Estrellas decorativas -->
+            <div class="star-line">
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-heart"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-heart"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+            </div>
+
+            <div class="message-box">
+                <p class="message">
+                    Hoy es tu día especial y quiero que sepas lo importante que eres para mí.
+                    <br><br>
+                    Eres la persona más hermosa, especial y maravillosa que he conocido.
+                    <br><br>
+                    Gracias por llenar mis días de amor, risas y felicidad. Me haces tan feliz y aprendo tanto de ti cada día.
+                    <br><br>
+                    Quiero que este cumpleaños sea tan increíble como tú lo eres para mí.
+                    <br><br>
+                    <span style="font-size: 24px; color: #ff66cc;">Te amo dali 💜✨</span>
+                </p>
+            </div>
+
+            <!-- "Lluvia de estrellas" del fondo -->
+            <div class="star-line">
+                <span class="star"><i class="fas fa-heart"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-heart"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-heart"></i></span>
+            </div>
+
+            <div class="footer">
+                <span class="footer-item"><i class="fas fa-birthday-cake"></i></span>
+                <span class="footer-item"><i class="fas fa-gift"></i></span>
+                <span class="footer-item"><i class="fas fa-wand-magic-sparkles"></i></span>
+                <span class="footer-item"><i class="fas fa-gamepad"></i></span>
+                <span class="footer-item"><i class="fas fa-gifts"></i></span>
+                <span class="footer-item"><i class="fas fa-heart"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="start-a-war-jennie.mp3" type="audio/mpeg" >
+    </audio>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
